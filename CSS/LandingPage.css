@@ -8,17 +8,6 @@ body {
   min-height: 100vh; 
 }
 
-header{
-  padding: 20px;
-    text-align: center;
-}
-
-header img{
-  height: 100px;
-}
-
-
-
 .logo{
   height:80px;
   place-items: center;
