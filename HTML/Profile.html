@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Attendance System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/profile.css">
 </head>
 <body>
-  <h1>Test !!!</h1>
+     <nav class="navbar">
+         <ul>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Student Details</a></li>
+            <li><a href="#">Teacher Details</a></li>
+            <li><a href="#">Logout</a></li>
+         </ul>
+     </nav>
+
+     <div class="profile-container">
+        <label for="profile-pic" class="profile-pic-label">
+          <img id="profile-image" src="" alt="Profile Picture">
+        </label>
+        <input type="file" id="profile-pic" accept="image/*" onchange="uploadImage(event)">
+    
+        <div class="details">
+            <h2>Name: <span id="name">John Doe</span></h2>
+            <p>Role: <span id="role">Student</span></p>
+            <p>Email: <span id="email">john.doe@example.com</span></p>
+            <p>Phone: <span id="phone">+1234567890</span></p>
+        </div>
+    </div>
 </body>
 </html>
