@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Management</title>
+    <link rel="stylesheet" href="/CSS/teacherdetails.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="/HTML/Profile/teacher_profile.html">Profile</a></li>
+            <li><a href="/HTML/Details/studentdetails.html">Student Details</a></li>
+            <li><a href="/HTML/Details/teacherdetails.html">Teacher Details</a></li>
+            <li><a href="/HTML/logout.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Teacher Management</h2>
+
+        <!-- Form to Add Teacher -->
+        <form id="teacherForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Add Teacher</button>
+        </form>
+
+        <!-- Teacher List Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Select</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                </tr>
+            </thead>
+            <tbody id="teacherList">
+                <!-- Teachers will be added here dynamically -->
+            </tbody>
+        </table>
+
+        <button id="removeSelected">Remove Selected</button>
+    </div>
+
+    <script src="/Javascript/teacher_details.js"></script>
+</body>
+</html>
