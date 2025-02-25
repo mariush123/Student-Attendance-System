@@ -24,3 +24,25 @@
 .navbar ul li a:hover{
   text-decoration: underline;
 }
+
+.button-container {
+  display: flex; 
+  justify-content: center;
+  gap: 20px;
+  margin-top: 250px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s ease; 
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
