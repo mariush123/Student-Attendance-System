@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student Management</title>
+    <link rel="stylesheet" href="/CSS/studentdetails.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="/HTML/Profile/student_profile.html">Profile</a></li>
+            <li><a href="/HTML/Details/studentdetails.html">student Details</a></li>
+            <li><a href="/HTML/Details/teacherdetails.html">Teacher Details</a></li>
+            <li><a href="/HTML/logout.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>student Management</h2>
+
+        <!-- Form to Add student -->
+        <form id="studentForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Add student</button>
+        </form>
+
+        <!-- student List Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Select</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                </tr>
+            </thead>
+            <tbody id="studentList">
+                <!-- students will be added here dynamically -->
+            </tbody>
+        </table>
+
+        <button id="removeSelected">Remove Selected</button>
+    </div>
+
+    <script src="/Javascript/student_details.js"></script>
+</body>
+</html>
